@@ -40,7 +40,8 @@ apiRouter.get('/search', (req, res) => {
 
     query = req.query;
     phrase = query.phrase;
-    fetch(`https://tenor.googleapis.com/v2/search?q=cat ${phrase}&key=${api_key}&client_key=my_test_app&limit=${config.searchLimit}`)
+    animal = query.animal;
+    fetch(`https://tenor.googleapis.com/v2/search?q=${animal} ${phrase}&key=${api_key}&client_key=my_test_app&limit=${config.searchLimit}`)
         .then(resolve => { return resolve.json() })
         .then(data => {
             console.log(data);

@@ -3,14 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cat GIF Search</title>
+  <title>Animal GIF Search</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
+    <!-- Mode Toggle Section -->
+    <div class="mode-toggle">
+      <button class="mode-btn active" data-mode="cat" data-emoji="🐱">Cat</button>
+      <button class="mode-btn" data-mode="dog" data-emoji="🐶">Dog</button>
+      <button class="mode-btn" data-mode="monkey" data-emoji="🐵">Monkey</button>
+      <button class="mode-btn" data-mode="pigeon" data-emoji="🕊️">Pigeon</button>
+    </div>
+
     <div class="header">
-      <h1>🐱 Cat GIF Search</h1>
-      <p>Find the purrfect GIF for any phrase!</p>
+      <h1><span id="animalEmoji">🐱</span> <span id="animalName">Cat</span> GIF Search</h1>
+      <p>Find the <span id="animalAdjective">purrfect</span> GIF for any phrase!</p>
     </div>
 
     <div class="search-section">
@@ -25,7 +33,7 @@
 
     <div id="loading" class="loading hidden">
       <div class="spinner"></div>
-      <p>Finding cat GIFs...</p>
+      <p>Finding <span id="loadingAnimal">cat</span> GIFs...</p>
     </div>
 
     <div id="error" class="error hidden"></div>
