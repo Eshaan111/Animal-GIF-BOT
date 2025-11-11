@@ -57,6 +57,25 @@ botRouter.post('/', disc.verifyKeyMiddleware(process.env.PUBLIC_KEY), async func
             },
         });
         }
+        else if (name === 'goppu-gif') {
+            console.log(data)
+            let animal = data.options[0].value;
+            console.log(animal)
+        // Send a message into the channel where command was triggered from
+        return res.send({
+            type: disc.InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
+            data: {
+            flags: disc.InteractionResponseFlags.IS_COMPONENTS_V2,
+            components: [
+                {
+                type: disc.MessageComponentTypes.TEXT_DISPLAY,
+                // Fetches a random emoji to send from a helper function
+                content: `${animal} world`
+                }
+            ]
+            },
+        });
+        }
 
         console.error(`unknown command: ${name}`);
         return res.status(400).json({ error: 'unknown command' });
