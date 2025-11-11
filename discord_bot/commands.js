@@ -41,6 +41,9 @@ const YO_COMMAND = {
 const GIF_COMMAND = {
   name: 'goppu-gif',
   description: 'gif of an animal',
+  type: 1,
+  integration_types: [0, 1],
+  contexts: [0, 2],
   options: [
     {
       type: 3,
@@ -49,10 +52,14 @@ const GIF_COMMAND = {
       required: true,
       choices: createCommandChoices(),
     },
-  ],
-  type: 1,
-  integration_types: [0, 1],
-  contexts: [0, 2],
+    {
+      type: 3,
+      name: "mood",
+      description: "Explain Mood for the gif",
+      required: true
+    }
+  ]
+  
 };
 
 // Command containing options
