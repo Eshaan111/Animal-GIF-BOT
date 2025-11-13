@@ -39,7 +39,7 @@ const YO_COMMAND = {
 };
 
 const GIF_COMMAND = {
-  name: 'goppu-gif',
+  name: 'pet-gif',
   description: 'gif of an animal',
   type: 1,
   integration_types: [0, 1],
@@ -47,8 +47,8 @@ const GIF_COMMAND = {
   options: [
     {
       type: 3,
-      name: 'object',
-      description: 'Pick your object',
+      name: 'pet',
+      description: 'Pick your Pet',
       required: true,
       choices: createCommandChoices(),
     },
@@ -64,6 +64,6 @@ const GIF_COMMAND = {
 
 // Command containing options
 
-const ALL_COMMANDS = [TEST_COMMAND, YO_COMMAND, GIF_COMMAND];
+const ALL_COMMANDS = [/**TEST_COMMAND, YO_COMMAND,**/ GIF_COMMAND];
 
 util.InstallGlobalCommands(process.env.APP_ID, ALL_COMMANDS);

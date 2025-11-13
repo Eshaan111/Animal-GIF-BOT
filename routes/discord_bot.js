@@ -80,7 +80,7 @@ botRouter.post('/', disc.verifyKeyMiddleware(process.env.PUBLIC_KEY), async func
             },
         });
         }
-        else if (name === 'goppu-gif') {
+        else if (name === 'pet-gif') {
             console.log(data)
             let animal = data.options[0].value;
             let mood = data.options[1].value;
