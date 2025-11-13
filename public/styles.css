@@ -10,8 +10,8 @@
   --color-gray-400: rgba(119, 124, 124, 1);
   --color-slate-500: rgba(98, 108, 113, 1);
   --color-brown-600: rgba(94, 82, 64, 1);
-  --color-charcoal-700: rgba(31, 33, 33, 1);
-  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-charcoal-700: rgba(10, 10, 10, 1);
+  --color-charcoal-800: rgba(18, 18, 18, 1);
   --color-slate-900: rgba(19, 52, 59, 1);
   --color-teal-300: rgba(50, 184, 198, 1);
   --color-teal-400: rgba(45, 166, 178, 1);
@@ -111,21 +111,21 @@
   --space-8: 8px;
   --space-10: 10px;
   --space-12: 12px;
-  --space-16: 16px;
-  --space-20: 20px;
-  --space-24: 24px;
-  --space-32: 32px;
+  --space-16: 12px;
+  --space-20: 16px;
+  --space-24: 18px;
+  --space-32: 24px;
 
   /* Border Radius */
-  --radius-sm: 6px;
-  --radius-base: 8px;
-  --radius-md: 10px;
-  --radius-lg: 12px;
+  --radius-sm: 4px;
+  --radius-base: 5px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-xs: 0 0 0 rgba(0, 0, 0, 0);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.02);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
     0 2px 4px -1px rgba(0, 0, 0, 0.02);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04),
@@ -738,8 +738,7 @@ select.form-control {
     format('woff2');
 }
 
-/* END PERPLEXITY DESIGN SYSTEM */
-```css
+
 * {
   margin: 0;
   padding: 0;
@@ -1168,4 +1167,3 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-primary);
 }
-```
