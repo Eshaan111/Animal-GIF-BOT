@@ -1,2 +1,2 @@
 # Catbot
-Hosted on Vercel : https://animal-gif-dc-bot.vercel.app/
+Hosted on Vercel : https://animal-gif-bot.vercel.app/
